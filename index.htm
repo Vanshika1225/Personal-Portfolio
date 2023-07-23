@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
- <head>
-    <!-- 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 --> -->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanshika Portfolio</title>
@@ -20,41 +19,127 @@
         body {
             background-color: #1a0931;
             color: white;
-            font-family:'Poppins',sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
-        nav{
+
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
-            background-color: rgb(18,18,62);
+            background-color: rgb(18, 18, 62);
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: center;
         }
-        nav ul li{
+
+        nav ul li {
             list-style: none;
             margin: 0 23px;
         }
-        .left{
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(239, 170, 241);
+            font-size: 1.04rem;
+        }
+
+        .left {
             font-size: 1.5rem;
         }
-        .firstSection{
+
+        .firstSection {
             display: flex;
             justify-content: space-around;
-            margin:23px 0;
+            align-items: center;
+            margin: 80px 0;
         }
-        .firstSection div{
+
+        .firstSection div {
             width: 30%;
         }
-        .leftSection{
-            font-size: 3rem;
+
+        .leftSection {
+            font-size: 2rem;
+            /* margin: 80px 0; */
         }
-        .rightSecion img{
-            width: 80%;
-            margin: 50px 0;/
+
+        .rightSecion img {
+            /* width: 84px; */
+            /* height:40px; */
+            width: 50%;
         }
+
+        .purple {
+            color: rgb(183, 133, 229);
+        }
+
+        #element {
+            color: rgb(183, 133, 229);
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr{
+            border: 0;
+            background-color: blue;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .text-grey{
+            color: grey;
+        }
+
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box{
+            background-color: wheat;
+            width: 170vh;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin:0 154px;
+        }
+
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 85px;
+            width: 180px;
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+        }
+
     </style>
 </head>
 
@@ -64,11 +149,11 @@
             <div class="left">Vanshika's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Resume</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -77,13 +162,69 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, My name is Vanshika
+                Hi, My name is <span class="purple">Vanshika </span>
+                And i Have a good command in </br>
+                <span id="element"></span>
             </div>
             <div class="rightSection">
                 <img src="bg.jpg" alt="background">
             </div>
         </section>
-    </main>
-</body>
 
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What i have done so far?</span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="bg3.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Weather Forcasting
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit iste debitis, est vitae perferendis architecto inventore repellat modi eligendi in quos, dolore iusto maiores. Similique beatae fugit doloremque dolorum?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="bg3.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                       Personal Portfolio
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit iste debitis, est vitae perferendis architecto inventore repellat modi eligendi in quos, dolore iusto maiores. Similique beatae fugit doloremque dolorum?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="bg3.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        xyz
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit iste debitis, est vitae perferendis architecto inventore repellat modi eligendi in quos, dolore iusto maiores. Similique beatae fugit doloremque dolorum?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="bg3.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        xyz
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sit iste debitis, est vitae perferendis architecto inventore repellat modi eligendi in quos, dolore iusto maiores. Similique beatae fugit doloremque dolorum?
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>C++</i> , JAVA ', 'Front End Technologiies like HTML , CSS , and JavaScript.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
 </html>
