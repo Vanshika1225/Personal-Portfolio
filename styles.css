@@ -3,10 +3,41 @@
     padding: 0;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 body {
     background-color: #1a0931;
     color: white;
     font-family: 'Poppins', sans-serif;
+}
+
+.About {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 90%;
+    border-radius: 8px;
+    margin-left: 53px;
+}
+
+.about-text {
+    margin-top: -186px;
+}
+
+.about-text h2 {
+    font-size: 60px;
 }
 
 nav {
@@ -33,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(239, 170, 241);
+    color: rgb(195, 59, 163);
     font-size: 1.04rem;
 }
 
@@ -45,7 +76,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 80px 0;
+    margin: 32px 0;
 }
 
 .firstSection div {
@@ -53,57 +84,74 @@ nav ul li a:hover {
 }
 
 .leftSection {
-    font-size: 1.4rem;
+    font-size: 2rem;
     /* margin: 80px 0; */
 }
-.leftSection a{
-    background:purple;
-   padding: 10px 18px;
-   text-decoration: none;
-   color:white;
-   display: inline-block;
-   margin: 30px 0;
-   border-radius: 5px;
+
+.leftSection a {
+    background: purple;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
 }
-.rightSecion{
-    width: 45%;
+
+.rightSecion {
+    width: 50%;
     height: 80%;
     position: absolute;
     bottom: 0px;
     right: 100px;
 }
-.rightSecion img{
+
+.rightSecion img {
     height: 100%;
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    transition: bottom 1s,left 1s;
-    background-size: cover;
+    transition: bottom 1s, left 1s;
 }
+
 .purple {
-    color: rgb(183, 133, 229);
+    color: rgb(195, 59, 163);
 }
 
 #element {
-    color: rgb(183, 133, 229);
+    color: rgb(195, 59, 163);
+}
+
+#element1 {
+    font-size: 2.5rem;
+    color: rgb(195, 59, 163);
+}
+
+#element3 {
+    font-size: 2.5rem;
+    color: rgb(195, 59, 163);
+}
+
+#element2 {
+    font-size: 2.5rem;
+    color: rgb(195, 59, 163);
+    margin-left: 650px;
+}
+
+#element4 {
+    font-size: 2.5rem;
+    color: rgb(195, 59, 163);
 }
 
 .secondSection {
     max-width: 80vw;
     margin: auto;
-    height: 80vh;
-}
-
-main hr {
-    border: 0;
-    background-color: rgb(239, 170, 241);
-    height: 1.2px;
-    margin: 40px 84px;
+    height: 90vh;
 }
 
 .text-grey {
-    color: grey;
+    color: rgb(45, 25, 25);
 }
 
 .secondSection h1 {
@@ -126,48 +174,138 @@ main hr {
 }
 
 .image-top {
-    width: 23px;
+    width: 50px;
     position: relative;
-    top: -32px;
-    left: -9px;
+    top: -53px;
+    left: -20px;
 }
 
 .vertical-title {
     position: relative;
-    top: 85px;
+    top: 50px;
     width: 180px;
+    left: -43px;
+}
+
+.home-logo {
+    display: flex;
+    background: none;
+}
+
+.home-logo a {
+    margin: 30px 15px 30px 0px;
+    padding: 13px 0px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    font-size: 30px;
+    color: rgb(195, 59, 163);
+    text-decoration: none;
+}
+
+.home-logo a:hover {
+    font-size: 35px;
 }
 
 .vertical-desc {
     position: relative;
-    top: 86px;
+    top: 60px;
+    left: -43px;
     color: grey;
     width: 150px;
     font-size: 9px;
+    font-size: 0.9rem;
 }
 
-footer {
-    background: rgb(230, 117, 234);
-    color: black;
+.About {
+    margin: -120px;
 }
 
-.footer {
+.Resume {
+    margin-left: 385px;
+    background-size: cover;
+}
+
+.Contact {
+    position: relative;
+    min-height: 50vh;
+    padding: 50px 100px;
     display: flex;
-    padding: 23px 250px;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer>div {
-    width: 223px;
-}
-
-.text-center {
+.Contact .Content {
+    max-width: 800px;
     text-align: center;
-    color: rgb(171, 35, 128);
+}
+
+.Contact .Content h2 {
+    font-size: 36px;
+    font-weight: 500px;
+}
+
+.container {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: -181px;
+}
+
+.container .contactinfo {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 684px; */
+}
+
+.container .contactform {
+    margin-left: 581px;
+}
+
+.contactinfo .box {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300px;
+}
+
+.contactinfo .box .text h3 {
+    font-weight: 500px;
+    /* color: #00bcd4; */
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    /* margin-left: 481px; */
+}
+
+.contactform h2 {
+    font-size: 30px;
+    color: #ece7eb;
+    font-weight: 500px;
+}
+
+.contactform .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputBox input {
+    width: 100%;
+    padding: 5px 0px;
 }
