@@ -25,7 +25,8 @@ body {
 
 .about-img img {
     padding-bottom: 20%;
-    max-width: 630px;
+    padding-left: 100px;
+    max-width: 500px;
     height: auto;
     width: 90%;
     border-radius: 8px;
@@ -309,3 +310,92 @@ nav ul li a:hover {
     width: 100%;
     padding: 5px 0px;
 }
+
+/* media query for laptop  */
+ @media ( max-width: 1600px){
+    section{
+        padding :2rem 3%;
+    }
+    /* .mypic{
+        display:none;
+    } */
+}
+@media (max-width:1448px)
+{
+    section{
+        padding :2rem 3%;
+    }
+    .leftSection{
+        padding-left:240px;
+        margin: 38px;
+    }
+}
+@media (max-width:1244px){
+    .leftSection{
+        padding-left: 300px;
+        justify-content: center;
+        display: inline;
+    }
+
+@media (max-width:732px){
+    .hdr{
+        padding: 1px;
+    }
+}
+
+@media (max-width:880px){
+    .left{
+        display: block;
+        padding:8px;
+
+    }
+    section{
+        padding :2rem 3%;
+    }
+}
+}
+@media (max-width:1028px) {
+    .Contact{
+        padding-left: 456px;
+    }
+    section{
+        padding :2rem 3%;
+    }
+}
+@media (max-width:942px){
+    .About{
+        /* display:inline; */
+        display: flex;
+    }
+    .about-img{
+        padding:7px;
+        display: flex;
+    }
+    .about-text{
+        margin-top: 65px;
+        margin-left: 270px;
+    }
+    .secondSection{
+        margin-top: 129px;
+    }
+    section{
+        padding :2rem 3%;
+    }
+}
+@media (max-width:672px){
+    section{
+        padding :2rem 3%;
+    }
+    .About p{
+        
+            padding-left:50px;
+        }   
+        
+    .nav-bar{
+        width: 717px;
+    }
+    }
+
+
+    
+    
