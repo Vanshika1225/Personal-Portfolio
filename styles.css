@@ -266,7 +266,9 @@ nav ul li a:hover {
     text-align: center;
     color: rgb(195, 59, 163);
 }
-
+#Projects{
+    margin-top: -123px;
+}
 .portfolio-content{
     /* display: grid;
     grid-template-columns: repeat(auto-fit,minmax(359px,auto)); */
