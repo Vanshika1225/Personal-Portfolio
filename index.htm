@@ -132,7 +132,7 @@
             </div>
 
             <div class="contactform" style="width: 100px;">
-                <form>
+                <form onsubmit="sendMail();reset();return false;">
                     <h2>Send Message</h2>
                     <div class="inputBox" style="width: 100px; font-weight: bold; border-radius: 6px;">
                         <span>Full Name</span>
@@ -141,7 +141,7 @@
                     </div>
                     <div class="inputBox" style="width: 100px; font-weight: bold;">
                         <span>Email</span>
-                        <input type="email" placeholder="Enter your Email" name="" required="required"
+                        <input type="email" id="email" placeholder="Enter your Email" name="" required="required"
                             style="width: 300px; border-radius: 4px;">
                     </div>
                     <div class="inputBox" style="width: 100px; font-weight: bold;">
@@ -154,7 +154,6 @@
                     </div>
                 </form>
             </div>
-
     </section>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -170,7 +169,22 @@
             typeSpeed: 50,
         });
     </script>
-
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendMail() {
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "vanshika.rbu@gmail.com",
+            Password : "password",
+            To : 'vanshikakakkar1225@gmail.com@website.com',
+            From : document.getElementById("email").value,
+            Subject : "New contact form Enquiry",
+            Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
 </body>
 
 </html>

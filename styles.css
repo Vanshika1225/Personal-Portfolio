@@ -405,13 +405,10 @@ nav ul li a:hover {
 }
 
 /* media query for laptop  */
- @media ( max-width: 1600px){
+@media ( max-width: 1600px){
     section{
         padding :2rem 3%;
     }
-    /* .mypic{
-        display:none;
-    } */
 }
 @media (max-width:1448px)
 {
@@ -428,6 +425,35 @@ nav ul li a:hover {
         padding-left: 300px;
         justify-content: center;
         display: inline;
+        margin-left: -201px;
+    }
+    .portfolio{
+        margin-top: -228px;
+    }
+    .row img{
+        width: 250px;
+    height: 250px;
+    }
+    .about-img{
+        width: 300px;
+        height: 404px;
+        margin-left: 12px;
+    }
+    .about-text{
+        margin-left: -176px;
+    font-size: 12px;
+    }
+    .Resume img{
+        width: 382px;
+        height: 392px;
+        margin-left: 169px;
+    }
+    .resume{
+        margin-left: -257px;
+    }
+    .container .contactForm{
+    width: 100px;
+    margin-left: 266px;
     }
 
 @media (max-width:732px){
@@ -446,6 +472,11 @@ nav ul li a:hover {
         padding :2rem 3%;
     }
 }
+}
+@media (max-width:425){
+    .leftSection{
+        font-size: 16px;
+    }
 }
 @media (max-width:1028px) {
     .Contact{
@@ -482,7 +513,7 @@ nav ul li a:hover {
     .About p{
         
             padding-left:50px;
-        }   
+        }
         
     .nav-bar{
         width: 717px;
