@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
     background-color: #1a0931;
     color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -209,6 +209,7 @@ nav ul li a:hover {
     justify-content: center;
     gap: 20;
     margin: 25px;
+    /* margin-left: -150px; */
 }
 
 .row{
@@ -228,6 +229,7 @@ nav ul li a:hover {
 }
 .row img:hover{
    transform: scale(1.1);
+   
 }
 
 .layer{
